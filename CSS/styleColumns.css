@@ -1,0 +1,149 @@
+
+.slide_container{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	border: solid #004B62 5px;
+	box-shadow: 10px 10px 8px #888888;
+	background-color:  #004B62;
+}
+
+.slide_container ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 300%;
+	list-style: none;
+	animation: cambio 15s infinite alternate;
+}
+
+.slide_container li{
+	width: 100%;
+	
+}
+
+.slide_container img{
+	width: 100%;
+	height: auto;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	30%{margin-left: 0;}
+
+	33%{ margin-left: -100%;}
+	63%{margin-left: -100%;}
+
+	66%{margin-left: -200%;}
+	100%{margin-left: -200%;}
+}
+
+.rowIndex{
+	margin-top: 20px;
+	margin-left: 8.3%;
+}
+
+.rowIndex article.FirstArt, article.SecondArt, article.ThirdArt{
+	background-color: #81C0C5;
+	margin-left: 3%;
+}
+
+.rowIndex [class*="Art"] img{
+	width: 100%;
+	height: auto;
+	background-color: #F9B401;
+}
+div.BottomIMG1 img,div.BottomIMG2 img{
+	width: 100%;
+	border: 5px #004B62 solid;
+}
+/*---------------------------------------END CSS FOR INDEX*/
+.Page2Art1 img{
+	width:  100%;
+}
+.TextPage2{
+	max-width: 840px;
+	margin: auto;
+}
+.Page2Middle img{
+	width: 100%;
+}
+
+/*--------------- PAGE2 IMAGES EFFECTS*/
+.Container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F9B401;
+}
+
+.Container:hover .overlay {
+  opacity: 1;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*--------------- --------------END PAGE2 IMAGES EFFECTS*/
+
+.imagesPage3 div img{
+	width: 100%;
+}
+
+ 
+.NewsPage4 img{
+ 	width: 100%;
+}
+
+img.page6user{
+	width: 100%;
+}
+
+/*For desktop: 2px; */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile ´phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+.slide_container{
+	display: none;
+}
+.rowIndex{
+	margin-left: 0;
+}
+.rowIndex article.FirstArt, article.SecondArt, article.ThirdArt{
+
+	margin-left: 0;
+}
+
+}
